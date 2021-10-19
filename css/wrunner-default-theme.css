@@ -9,7 +9,7 @@
 }
 
 .wrunner__division_theme_default.wrunner__division {
-  background-color: #cb73a4;
+  background-color: #0000;
 }
 
 .wrunner__divisions_theme_default.wrunner__divisions_direction_horizontal {
@@ -46,7 +46,7 @@
   height: 1.25rem;
   width: 1.25rem;
   border-radius: 40%;
-  background-color: #cb73a4;
+  background-color: #414042;
   transition-duration: 0.2s;
   transition-property: transform, background-color, border-radius;
   cursor: pointer;
@@ -55,12 +55,12 @@
 .wrunner__handle_theme_default.wrunner__handle:hover {
   transform: scale(1.1);
   border-radius: 50%;
-  background-color: #cb73a4;
+  background-color: #414042;
 }
 .wrunner__handle_theme_default.wrunner__handle:active {
   transform: scale(0.9);
   border-radius: 50%;
-  background-color: #cb73a4;
+  background-color: #414042;
 }
 
 .wrunner__outer_theme_default.wrunner__outer_direction_horizontal {
@@ -109,7 +109,7 @@
 
 .wrunner__pathPassed_theme_default.wrunner__pathPassed {
   position: absolute;
-  background-color: #cb73a4;
+  background-color: #414042;
   border-radius: 0.25rem;
 }
 
@@ -123,7 +123,7 @@
   margin-left: -0.25rem;
   bottom: -0.5rem;
   border: 0.25rem solid transparent;
-  border-top-color: #cb73a4;
+  border-top-color: #E9E6E6;
 }
 
 .wrunner__valueNote_theme_default.wrunner__valueNote_direction_vertical {
@@ -136,7 +136,7 @@
   margin-top: -0.25rem;
   left: -0.5rem;
   border: 0.25rem solid transparent;
-  border-right-color: #cb73a4;
+  border-right-color: #E9E6E6;
 }
 
 .wrunner__valueNote_theme_default.wrunner__valueNote_display_hidden {
@@ -150,14 +150,19 @@
 .wrunner__valueNote_theme_default.wrunner__valueNote {
   position: absolute;
   padding: 0.35rem;
-  background-color: #c54a8e;
+  background-color: #E9E6E6;
   text-align: center;
-  color: #fff;
+  color: #000000;
   font-size: 0.75rem;
-  font-family: lato;
-  font-weight: 900;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 800;
   cursor: default;
 }
+
+.wrunner__valueNote_theme_default.wrunner__valueNote::before {
+  content: '$';
+}
+
 .wrunner__valueNote_theme_default.wrunner__valueNote::after {
   content: '';
   position: absolute;
