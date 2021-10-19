@@ -1,124 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>HTML Dual Range Slider Example</title>
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-        <!-- wRunner CSS -->
-        <link rel="stylesheet" href="css/wrunner-default-theme.css" />
-        <!-- wRunner Vanilla JS -->
-        <script src="js/wrunner-native.js"></script>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Dual Range Slider Example</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-        <!-- wRunner jQuery -->
-        <script src="js/wrunner-jquery.js"></script>
+    <!-- wRunner CSS -->
+    <link rel="stylesheet" href="css/wrunner-default-theme.css" />
+    <!-- wRunner Vanilla JS -->
+    <script src="js/wrunner-native.js"></script>
 
-        <!-- Demo CSS -->
-        <link rel="stylesheet" href="css/demo.css" />
+    <!-- wRunner jQuery -->
+    <script src="js/wrunner-jquery.js"></script>
 
-        <style>
-            .my-jquery-slider,
-            .my-js-slider {
-                position: relative;
-                max-width: 50px;
-                margin: 10px auto;
-            }
-        </style>
-    </head>
-    <body>
-        <main
-            style="
+    <!-- Demo CSS -->
+    <link rel="stylesheet" href="css/demo.css" />
+
+    <style>
+        .my-jquery-slider,
+        .my-js-slider {
+            position: relative;
+            max-width: 50px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <main style="
                 border: 1px solid black;
                 margin-bottom: 10px;
                 text-align: center;
-            "
-        >
-            <h1>Alternative A</h1>
-            <br />
-            <div style="display: flex">
-                <button
-                    style="
+                background-image: url('goal.jpg');
+                background-repeat: no-repeat;
+                width:380px;
+                height: 865px;
+            ">
+        <h1 style = "position: relative; top:-10px">Alternative A</h1>
+        <br />
+        <div style="display: flex">
+            <button style="
                         position: relative;
                         left: -25px;
+                        top: 345px;
                         font-size: 15px;
                         background-color: #1f2b85;
                         color: white;
                         padding: 5px;
                         width: 100px;
-                    "
-                >
-                    Water
-                </button>
-                <button
-                    style="
+                        border-radius: 10px;
+                    ">
+                Water
+            </button>
+            <button style="
                         position: relative;
-                        left: 195px;
+                        left: 25px;
+                        top: 345px;
                         font-size: 15px;
                         background-color: #6b2084;
                         color: white;
                         padding: 5px;
                         width: 100px;
-                    "
-                >
-                    Gas
-                </button>
-                <button
-                    style="
+                        border-radius: 10px;
+                    ">
+                Gas
+            </button>
+            <button style="
+                        position: relative;
+                        left: 85px;
+                        top: 345px;
                         font-size: 15px;
                         background-color: #66c7a7;
                         color: white;
                         padding: 5px;
-                        position: relative;
-                        left: 400px;
                         width: 100px;
-                    "
-                >
-                    Electricity
-                </button>
+                        border-radius: 10px;
+                    ">
+                Electricity
+            </button>
+        </div>
+        <br />
+        <div style="display: flex; justify-content: space-between; position: relative; top:335px" class="container">
+            <div>
+                $1000
+                <div class="vertical-slider1" style="height: 320px"></div>
+                $0
             </div>
-            <br />
-            <div
-                style="display: flex; justify-content: space-between"
-                class="container"
-            >
-                <div>
-                    $1000
-                    <div class="vertical-slider1" style="height: 500px"></div>
-                    $0
-                </div>
 
-                <div>
-                    $1000
-                    <div class="vertical-slider2" style="height: 500px"></div>
-                    $0
-                </div>
-
-                <div>
-                    $1000
-                    <div class="vertical-slider3" style="height: 500px"></div>
-                    $0
-                </div>
+            <div>
+                $1000
+                <div class="vertical-slider2" style="height: 320px"></div>
+                $0
             </div>
-        </main>
 
-        <main style="border: 1px solid black">
-            <div style="text-align: center">
-                <h1>Alternative B</h1>
+            <div>
+                $1000
+                <div class="vertical-slider3" style="height: 320px"></div>
+                $0
             </div>
-            <br />
+        </div>
+    </main>
 
-            <button
-                style="
+    <main style="border: 1px solid black;
+                background-image: url('goal.jpg');
+                background-repeat: no-repeat;
+                width:380px;
+                height: 865px;">
+        <div style="text-align: center">
+            <h1 style = "position: relative; top:-10px">Alternative B</h1>
+        </div>
+        <br />
+        <div class = "container" style = "position: relative; top: 340px">
+            <button style="
                     font-size: 15px;
                     background-color: #1f2b85;
                     color: white;
                     padding: 5px;
                     margin-bottom: 5px;
                     width: 100px;
-                "
-            >
+                    border-radius: 10px;
+                ">
                 Water
             </button>
             <div class="single-slider1"></div>
@@ -128,18 +132,16 @@
             </div>
 
             <br />
-            <br />
 
-            <button
-                style="
+            <button style="
                     font-size: 15px;
                     background-color: #6b2084;
                     color: white;
                     padding: 5px;
                     margin-bottom: 5px;
                     width: 100px;
-                "
-            >
+                    border-radius: 10px;
+                ">
                 Gas
             </button>
             <div class="single-slider2"></div>
@@ -149,18 +151,16 @@
             </div>
 
             <br />
-            <br />
 
-            <button
-                style="
+            <button style="
                     font-size: 15px;
                     background-color: #66c7a7;
                     color: white;
                     padding: 5px;
                     margin-bottom: 5px;
                     width: 100px;
-                "
-            >
+                    border-radius: 10px;
+                ">
                 Electricity
             </button>
             <div class="single-slider3"></div>
@@ -168,61 +168,63 @@
                 <span>$0</span>
                 <span>$1000</span>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <script>
-            //Vertical range slider
-            var setVertical1 = {
-                roots: document.querySelector(".vertical-slider1"),
-                direction: "vertical",
-                singleValue: 100,
-                limits: { minLimit: 0, maxLimit: 1000 },
-                step: 5,
-            };
-            var verticalSlider = wRunner(setVertical1);
+    <script>
+        //Vertical range slider
+        var setVertical1 = {
+            roots: document.querySelector(".vertical-slider1"),
+            direction: "vertical",
+            singleValue: 100,
+            limits: { minLimit: 0, maxLimit: 1000 },
+            step: 5,
+        };
+        var verticalSlider = wRunner(setVertical1);
 
-            var setVertical2 = {
-                roots: document.querySelector(".vertical-slider2"),
-                direction: "vertical",
-                singleValue: 100,
-                limits: { minLimit: 0, maxLimit: 1000 },
-                step: 5,
-            };
-            var verticalSlider2 = wRunner(setVertical2);
+        var setVertical2 = {
+            roots: document.querySelector(".vertical-slider2"),
+            direction: "vertical",
+            singleValue: 100,
+            limits: { minLimit: 0, maxLimit: 1000 },
+            step: 5,
+        };
+        var verticalSlider2 = wRunner(setVertical2);
 
-            var setVertical3 = {
-                roots: document.querySelector(".vertical-slider3"),
-                direction: "vertical",
-                singleValue: 100,
-                limits: { minLimit: 0, maxLimit: 1000 },
-                step: 5,
-            };
-            var verticalSlider3 = wRunner(setVertical3);
+        var setVertical3 = {
+            roots: document.querySelector(".vertical-slider3"),
+            direction: "vertical",
+            singleValue: 100,
+            limits: { minLimit: 0, maxLimit: 1000 },
+            step: 5,
+        };
+        var verticalSlider3 = wRunner(setVertical3);
 
-            //Single Slider
-            var singleSlider1 = wRunner({
-                roots: document.querySelector(".single-slider1"),
-                singleValue: 100,
-                limits: { minLimit: 0, maxLimit: 1000 },
-                step: 5,
-            });
+        //Single Slider
+        var singleSlider1 = wRunner({
+            roots: document.querySelector(".single-slider1"),
+            singleValue: 100,
+            limits: { minLimit: 0, maxLimit: 1000 },
+            step: 5,
+        });
 
-            var singleSlider2 = wRunner({
-                roots: document.querySelector(".single-slider2"),
-                singleValue: 100,
-                limits: { minLimit: 0, maxLimit: 1000 },
-                step: 5,
-            });
+        var singleSlider2 = wRunner({
+            roots: document.querySelector(".single-slider2"),
+            singleValue: 100,
+            limits: { minLimit: 0, maxLimit: 1000 },
+            step: 5,
+        });
 
-            var singleSlider3 = wRunner({
-                roots: document.querySelector(".single-slider3"),
-                singleValue: 100,
-                limits: { minLimit: 0, maxLimit: 1000 },
-                step: 5,
-            });
-        </script>
+        var singleSlider3 = wRunner({
+            roots: document.querySelector(".single-slider3"),
+            singleValue: 100,
+            limits: { minLimit: 0, maxLimit: 1000 },
+            step: 5,
+        });
+    </script>
 
-        <!--Syntax Highlighter (for demo only)-->
-        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-    </body>
+    <!--Syntax Highlighter (for demo only)-->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</body>
+
 </html>
