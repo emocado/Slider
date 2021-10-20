@@ -104,72 +104,6 @@
         </div>
     </main>
 
-    <main style="border: 1px solid black;
-                background-image: url('goal.jpg');
-                background-repeat: no-repeat;
-                width:380px;
-                height: 865px;">
-        <div style="text-align: center">
-            <h1 style = "position: relative; top:-10px">Alternative B</h1>
-        </div>
-        <br />
-        <div class = "container" style = "position: relative; top: 340px">
-            <button style="
-                    font-size: 15px;
-                    background-color: #1f2b85;
-                    color: white;
-                    padding: 5px;
-                    margin-bottom: 5px;
-                    width: 100px;
-                    border-radius: 10px;
-                ">
-                Water
-            </button>
-            <div class="single-slider1"></div>
-            <div style="display: flex; justify-content: space-between">
-                <span>$0</span>
-                <span>$1000</span>
-            </div>
-
-            <br />
-
-            <button style="
-                    font-size: 15px;
-                    background-color: #6b2084;
-                    color: white;
-                    padding: 5px;
-                    margin-bottom: 5px;
-                    width: 100px;
-                    border-radius: 10px;
-                ">
-                Gas
-            </button>
-            <div class="single-slider2"></div>
-            <div style="display: flex; justify-content: space-between">
-                <span>$0</span>
-                <span>$1000</span>
-            </div>
-
-            <br />
-
-            <button style="
-                    font-size: 15px;
-                    background-color: #66c7a7;
-                    color: white;
-                    padding: 5px;
-                    margin-bottom: 5px;
-                    width: 100px;
-                    border-radius: 10px;
-                ">
-                Electricity
-            </button>
-            <div class="single-slider3"></div>
-            <div style="display: flex; justify-content: space-between">
-                <span>$0</span>
-                <span>$1000</span>
-            </div>
-        </div>
-    </main>
 
     <script>
         //Vertical range slider
@@ -200,27 +134,6 @@
         };
         var verticalSlider3 = wRunner(setVertical3);
 
-        //Single Slider
-        var singleSlider1 = wRunner({
-            roots: document.querySelector(".single-slider1"),
-            singleValue: 100,
-            limits: { minLimit: 0, maxLimit: 1000 },
-            step: 5,
-        });
-
-        var singleSlider2 = wRunner({
-            roots: document.querySelector(".single-slider2"),
-            singleValue: 100,
-            limits: { minLimit: 0, maxLimit: 1000 },
-            step: 5,
-        });
-
-        var singleSlider3 = wRunner({
-            roots: document.querySelector(".single-slider3"),
-            singleValue: 100,
-            limits: { minLimit: 0, maxLimit: 1000 },
-            step: 5,
-        });
     </script>
 
     <!--Syntax Highlighter (for demo only)-->
